@@ -1,0 +1,101 @@
+@use './variables';
+@use './helpers.scss';
+@use './mediaMixins.scss';
+
+
+.container-form {
+  position: relative;
+  max-width: 380px;
+  width: 100%;
+  border-radius: 10px;
+  padding-bottom: 36px;
+  overflow: hidden;
+  background-color: variables.$primary-color;
+
+  &__header {
+    background: variables.$violet-gradient no-repeat;
+    padding: 29px 40px;
+    margin-bottom: 31px;
+  }
+
+  &__title {
+    font-size: 23px;
+    font-weight: 700;
+    line-height: 26.77px;
+    text-align: center;
+    line-height: 1.13
+  }
+
+  &__form {
+    width: 100%;
+    
+  }
+
+  &__wrapper-width {
+    padding-left: 40px;
+    padding-right: 40px;
+
+    @include mediaMixins.max_430 {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+
+    &--mb--34 {
+      margin-bottom: 34px;
+    }
+
+    &--mb--17 {
+      margin-bottom: 17px;
+    }
+
+    &--mb--16 {
+      margin-bottom: 16px;
+    }
+    
+  }
+
+  &__label {
+    display: block;
+    font-size: 18px;
+    color: variables.$gray_2;
+    padding-left: 26px;
+  }
+
+  &__input {
+    display: block;
+    width: 100%;
+    height: 56px;
+    padding-left: 20px;
+    border-radius: 10px;
+    border: none;
+    outline: transparent;
+    background-color: variables.$secondary-color_v2;
+
+    &::placeholder {
+      opacity: .5;
+    }
+  }
+
+  &__btn {
+  
+  }
+
+  &__privacy {
+    font-size: 12px;
+    line-height: 1.13;
+    padding-left: 26px;
+    letter-spacing: 0px;
+    font-weight: 300;
+    color: variables.$secondary-color_v3;
+    position: relative;
+
+    &::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      background: url('/assets/img/lock.svg') no-repeat;
+      width: 16px;
+      height: 16px;
+    }
+  }
+}

@@ -1,0 +1,15 @@
+
+{{#each data.cards_info}}
+<li class="card-info">
+  <div class="card-info__container-img">
+    <picture>
+      <source srcset="./assets/img/{{img}}.webp" type="image/webp">
+      <img src="./assets/img/{{img}}.png" alt="картинка карточки">
+    </picture>
+  </div>
+  <div class="card-info__text">
+    <h3 class="card-info__title">{{title}}</h3>
+    <p class="card-info__paragraph">{{paragraph}}</p>
+  </div>
+</li>
+{{/each}}

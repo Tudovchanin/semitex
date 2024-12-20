@@ -1,0 +1,19 @@
+<div class="container-slider">
+  <ul class="slider">
+    {{#each data.cards_producer }}
+    <li class="item">
+      <div class="content">
+        <article class="card-producer">
+          <div class="card-producer__container-img">
+            <picture>
+              <source srcset="./assets/img/{{img}}.webp" type="image/webp">
+              <img src="./assets/img/{{img}}.png" alt="картинка карточки">
+            </picture>
+          </div>
+        </article>
+      </div>
+     
+    </li>
+    {{/each}}
+  </ul>
+</div>

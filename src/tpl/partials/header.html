@@ -1,0 +1,25 @@
+
+<div class="header-content">
+  <a class="header-content__logo logo" href="/" aria-label="На главную">
+    <img src="./assets/img/logo.svg" alt="Логотип компании">
+  </a>
+  <input type="checkbox" id="burger-checkbox" class="burger-checkbox">
+  <label class="burger" for="burger-checkbox"></label>
+  <div class="mobile-menu">
+    <nav class="header-content__nav mobile-menu__nav">
+      <ul class="header-content__list mobile-menu__list">
+        {{#each data.navItems}}
+        <li class="header-content__list-item mobile-menu__list-item">
+          <a class="header-content__list-link mobile-menu__list-link" href="{{ url }}" aria-label="Перейти к {{ title }}">{{ title }}</a>
+        </li>
+        {{/each}}
+      </ul>
+    </nav>
+    <a class="header-content__contact-info mobile-menu__contact-info" href="tel:+7(812) {{data.phone_us}}"
+      aria-label="Позвонить по номеру +7 (812) {{data.phone_us}}">
+      <span aria-hidden="true">
+        <img class="header-content__phone-icon" src="./assets/img/tel_icon.svg" alt="иконка телефона"></span>
+      <span class="header-content__phone-number"><span>+7 (812) </span><span>{{data.phone_us}}</span></span>
+    </a>
+  </div>
+</div>

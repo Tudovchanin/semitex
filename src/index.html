@@ -1,0 +1,83 @@
+---
+layout: default
+title: Главная
+---
+<header id="page-header" class="header header--width-position pd-x-20">
+  {{> header }}
+</header>
+
+
+
+
+
+<main>
+  <section class="hero hero-bg">
+    <div class="hero__content pd-x-20 width-page-1320 x-center">
+      {{> hero_info }}
+      {{> container_form }}
+    </div>
+  </section>
+  <section class="section-info">
+
+    <div class="section-info__content pd-x-20 width-page-1320 x-center">
+      <h2 class="section-info__title sub-title">Почему с нами выгодно</h2>
+      <p class="section-info__paragraph x-center">С 1996 года мы занимаемся оптовыми поставками электронных компонентов
+        от ведущих производителей из Европы
+        и Азии для Российских потребителей.</p>
+      <ul class="section-info__cards x-center">
+        {{> cards_info}}
+      </ul>
+    </div>
+
+  </section>
+
+  <section class="section-slider">
+    <div class="section-slider__content pd-x-20 width-page-1320 x-center">
+      <h2 class="section-slider__title sub-title">Наши производители</h2>
+      <div class="section-slider__wrapper-slider">
+        <button class="section-slider__btn section-slider__btn--rotate btn-prev-slide">предыдущий слайд</button>
+        {{> slider}}
+        <button class="section-slider__btn btn-next-slide">следующий слайд</button>
+      </div>
+      <p class="section-slider__paragraph">
+        Lorem ipsum dolor sit amet consectetur. Non eget blandit in euismod felis id quisque nunc. Non orci lacus elit
+        mauris velit gravida imperdiet id. Ipsum pulvinar ac ut sociis. Sed magna gravida consequat et euismod aenean
+        quis mauris. Ut etiam egestas ultrices faucibus ultrices nisl enim consequat faucibus. Nibh id leo ullamcorper
+        eleifend. Id at commodo interdum et leo.
+      </p>
+    </div>
+  </section>
+
+  <section class="section-cards-job">
+    <div class="section-cards-job__content pd-x-20 width-page-1320 x-center">
+      <h2 class="section-cards-job__title sub-title">Схема работы</h2>
+      <p class="section-cards-job__paragraph">Lorem ipsum dolor sit amet consectetur. Augue velit in enim sagittis
+        imperdiet sit mauris. Vitae sit in fusce massa amet.</p>
+      <div class="section-cards-job__cards">
+        {{> cards_job}}
+      </div>
+      <a class="main-btn section-cards-job__btn x-center" href="/">оставить заявку</a>
+    </div>
+
+  </section>
+
+  <section class="section-accordion">
+    <div class="section-accordion__content pd-x-20 width-page-1320 x-center">
+      <h2 class="sub-title section-accordion__title">Ответы на самые популярные вопросы в сфере
+      </h2>
+
+      <div class="section-accordion__acordion">
+        {{> accordion}}
+      </div>
+
+
+
+    </div>
+  </section>
+
+</main>
+
+
+<footer class="footer">
+ {{> footer}}
+</footer>

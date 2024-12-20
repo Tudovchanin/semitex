@@ -1,0 +1,13 @@
+<div class="footer-content pd-x-20 width-page-1320 x-center">
+  <a class="footer-content__logo" href="/" aria-label="На главную">
+    <img src="./assets/img/logo.svg" alt="Логотип компании">
+  </a>
+  <ul class="footer-content__list">
+    {{#each data.footerList}}
+    <li class="footer-content__item">
+      <a class="footer-content__item-link" href="{{url}}">{{title}}</a>
+    </li>
+    {{/each}}
+  </ul>
+  <a href="/" class="footer-content__btn main-btn main-btn--blue">ОСТАВИТЬ ЗАЯВКУ</a>
+</div>

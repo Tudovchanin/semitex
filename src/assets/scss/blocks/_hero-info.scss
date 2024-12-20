@@ -1,0 +1,107 @@
+@use './variables';
+@use './mediaMixins';
+
+.hero-info {
+  max-width: 835px;
+  width: 100%;
+
+  @include mediaMixins.max_1279 {
+    max-width: 700px;
+  }
+
+
+  &__header {
+    margin-bottom: 14px;
+    line-height: 1;
+  }
+
+  &__title {
+    font-size: 69px;
+    font-weight: 700;
+    text-transform: uppercase;
+
+    @include mediaMixins.max_1279 {
+      font-size: 46px;
+    }
+
+    @include mediaMixins.max_380 {
+      font-size: 15vw;
+    }
+  }
+
+  &__paragraph-title {
+    font-size: 69px;
+    color: variables.$secondary-color;
+    @include mediaMixins.max_1279 {
+      font-size: 46px;
+    }
+
+    @include mediaMixins.max_380 {
+      font-size: 15vw;
+    }
+    &--big {
+      font-size: 60px;
+      font-weight: 700;
+      color: variables.$primary-color;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      @include mediaMixins.max_1279 {
+        font-size: 40px;
+      }
+
+    @include mediaMixins.max_380 {
+      font-size: 13vw;
+    }
+    }
+  }
+
+  &__paragraph {
+    max-width: 672px;
+    width: 100%;
+    margin-bottom: 32px;
+    font-weight: 300;
+    font-size: 21px;
+    color: variables.$secondary-color;
+    line-height: 1.2;
+    @include mediaMixins.max_1279 {
+      max-width: initial;;
+    }
+    @include mediaMixins.max_380 {
+      font-size: 7vw;
+     }
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 30px 25px 30px 35px;
+    border-radius: 10px;
+    background: variables.$blue-gradient no-repeat;
+    @include mediaMixins.max_430 {
+      padding: 30px 20px;
+    }
+
+    @include mediaMixins.max_380 {
+     padding: 20px 10px;
+    }
+  }
+
+  &__list-item {
+    padding-left: 24px;
+    font-size: 21px;
+    font-weight: 300;
+    position: relative;
+    @include mediaMixins.max_380 {
+      font-size: 6vw;
+     }
+    &::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      background: url('/assets/img/check.svg') no-repeat;
+      width: 14px;
+      height: 14px;
+    }
+  }
+}

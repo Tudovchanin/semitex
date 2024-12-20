@@ -1,0 +1,45 @@
+@use './variables';
+
+.card-info {
+  max-width: 369px;
+  width: 100%;
+  min-height: 406px;
+  padding: 40px 28px;
+  border-radius: 10px;
+  background-color: variables.$primary-color;
+  position: relative;
+  overflow: hidden;
+  &::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transform: rotate(-45deg) translateY(135px);
+    width: 300px;
+    height: 200px;
+    border-radius: 30px;
+    background-color: variables.$secondary-color_v5;
+    opacity: .07;
+  }
+  &__container-img {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 36px;
+  }
+
+  &__title {
+    margin-bottom: 16px;
+    color: rgb(42, 51, 108);
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.15;
+    text-align: center;
+  }
+
+  &__paragraph {
+    color: rgb(85, 85, 85);
+    font-size: 18px;
+    line-height: 1.2;
+    text-align: center;
+  }
+}

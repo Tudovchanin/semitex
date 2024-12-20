@@ -1,0 +1,357 @@
+@use './reset';
+@use './mediaMixins';
+@use './fonts';
+@use './variables';
+@use './helpers.scss';
+@use './blocks/hero-bg';
+@use './blocks/header';
+@use './blocks/hero-info';
+@use './blocks/form';
+@use './blocks/card-info';
+@use './blocks/card-producer';
+@use './blocks/slider28';
+@use './blocks/cards-job-block.scss';
+@use './blocks/accordion';
+@use './blocks/footer';
+
+
+body {
+  background-color: variables.$background-color ;
+  min-height: 100vh;
+  font-family: 'Futura Futuris';
+  color: variables.$primary-color;
+
+}
+
+.header {
+  position: fixed;
+  z-index: 100;
+  padding-top: 54px;
+  padding-bottom: 54px;
+  width: 100%;
+  background-color: rgba(0, 0, 255, 0);
+  transition: background-color .5s ease, padding-bottom .5s ease;
+
+  &--width-position {
+    max-width: 1321px;
+    width: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+.hero {
+  min-height: 850px;
+  margin-bottom: 85px;
+
+  @include mediaMixins.max_380 {
+    margin-bottom: 40px;
+  }
+
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    width: 100%;
+    padding-top: 188px;
+
+    @include mediaMixins.max_1279 {
+      padding-top: 150px;
+      gap: 20px;
+    }
+
+    @include mediaMixins.max_1024 {
+      display: grid;
+      padding-bottom: 100px;
+    }
+  }
+}
+
+.section-info {
+  margin-bottom: 130px;
+
+  &__title {
+    margin-bottom: 28px;
+    text-align: center;
+    color: rgb(17, 17, 17);
+  }
+
+  &__paragraph {
+    max-width: 1070px;
+    margin-bottom: 42px;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1;
+    letter-spacing: .033em;
+    text-align: center;
+    word-spacing: -2px;
+    color: rgb(3, 3, 3);
+
+    @include mediaMixins.max_380 {
+      font-size: 7vw;
+    }
+  }
+
+  &__cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(369px, 1fr));
+    justify-items: center;
+    column-gap: 43px;
+    row-gap: 34px;
+    max-width: 1193px;
+    width: 100%;
+
+    @include mediaMixins.max_430 {
+      grid-template-columns: 1fr;
+    }
+  }
+}
+
+.section-slider {
+  background-image: url('/assets/img/bg_slider.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  min-height: 728px;
+  margin-bottom: 72px;
+
+  @include mediaMixins.max_1300 {
+    background-size: cover;
+  }
+
+  &__content {
+    padding-top: 153px;
+    position: relative;
+  }
+
+  &__title {
+    text-align: center;
+    color: variables.$primary-color;
+  }
+
+  &__btn {
+    width: 41px;
+    height: 41px;
+    border-radius: 100%;
+    border: none;
+    position: absolute;
+    right: 0;
+    top: 65%;
+
+    background: url('/assets/img/accordion_btn.svg') no-repeat center / 16px;
+    background-color: rgba(128, 128, 128, 0.839);
+    transform: rotate(-90deg) translateY(75px);
+    font-size: 0;
+    cursor: pointer;
+
+    &:disabled {
+      opacity: .5;
+    }
+
+    @include mediaMixins.max_1600 {
+      top: initial;
+      bottom: -60px;
+      right: 30%;
+      transform: rotate(-90deg);
+    }
+  }
+
+  &__btn--rotate {
+    transform: rotate(90deg) translateY(75px);
+    left: 0;
+
+    @include mediaMixins.max_1600 {
+      left: 30%;
+      transform: rotate(90deg);
+    }
+  }
+
+  &__wrapper-slider {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+}
+
+.section-cards-job {
+  min-height: 963px;
+  position: relative;
+  padding-bottom: 100px;
+
+  &::before {
+    content: '';
+    position: absolute;
+    z-index: -100;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: url('/assets/img/bg_cards_job.png') no-repeat center / 100% 100%
+  }
+
+  &__title {
+    margin-bottom: 24px;
+    text-align: center;
+    color: rgb(17, 17, 17);
+  }
+
+  &__paragraph {
+    margin-bottom: 46px;
+    color: rgb(51, 51, 51);
+    text-align: center;
+  }
+
+  &__cards {
+    margin-bottom: 24px;
+  }
+
+  &__btn {
+    max-width: 300px;
+  }
+}
+
+.section-accordion {
+  position: relative;
+  top: -100px;
+
+  
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: -100px;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    background: url('/assets/img/bg_img_accordion.svg') no-repeat center top / 100% 100%;
+
+    @include mediaMixins.max_480 {
+      background-size: cover;
+    }
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+
+    right: 0;
+    bottom: -100px;
+
+    z-index: -1;
+    width: 100%;
+    height: calc(100% + 100px);
+    background-image: url('/assets/img/bg_decor_accordion.png');
+    background-size: 100% 100%;
+
+  }
+
+  &__content {
+    padding-top: 120px;
+  }
+
+  &__title {
+    margin-bottom: 53px;
+    color: variables.$primary-color;
+    text-align: center;
+
+    @include mediaMixins.max_480 {
+      text-align: left;
+    }
+  }
+
+}
+
+
+.footer {
+  background-color: rgb(51, 51, 51);
+  display: flex;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+
+
+
+@include mediaMixins.max_1024 {
+  .hero-info {
+    display: contents;
+  }
+}
+
+
+.sub-title {
+  font-size: 45px;
+  font-weight: 700;
+  line-height: 1;
+
+
+
+  @include mediaMixins.max_1279 {
+    font-size: 46px;
+  }
+
+  @include mediaMixins.max_480 {
+    font-size: 40px;
+  }
+
+  @include mediaMixins.max_380 {
+    font-size: 9.75vw;
+  }
+}
+
+.main-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 56px;
+  border-radius: 10px;
+  background-color: variables.$btn-color;
+  border: none;
+  font-size: 18px;
+  line-height: 1;
+  text-transform: uppercase;
+  transition: transform 0.2s;
+  color: variables.$primary-color;
+  cursor: pointer;
+
+  @include helpers.hover-and-pointer {
+    transition: transform 0.2s, opacity .3s;
+
+    &:hover {
+      opacity: .5;
+    }
+
+    ;
+  }
+
+  &:active {
+    transform: scale(.98);
+  }
+
+  &--blue {
+    background-color: rgb(150, 154, 247);
+  }
+}
+
+
+
+.x-center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header-move {
+  background: variables.$card-gradient no-repeat;
+  padding-bottom: 20px;
+}
+
+.pd-x-20 {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.width-page-1320 {
+  max-width: 1320px;
+  width: 100%;
+}

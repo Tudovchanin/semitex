@@ -1,0 +1,31 @@
+@use './mediaMixins';
+
+
+.hero-bg {
+  background-image: url('/assets/img/hero_blue.svg');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  position: relative;
+  z-index: 0;
+  @include mediaMixins.max_1300 {
+    background-size: cover;
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url('/assets/img/decor_hero.png') no-repeat center;
+    z-index: -1;
+    @include mediaMixins.min_1949 {
+      background: url('/assets/img/decor_hero.png') no-repeat center -60px;
+    } 
+    @include mediaMixins.max_1909 {
+      background: url('/assets/img/decor_hero.png') no-repeat center -40px;
+    
+      
+    }
+  }
+ 
+}

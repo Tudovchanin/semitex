@@ -1,0 +1,225 @@
+{
+  "navItems": [
+    {
+      "title": "Каталог",
+      "url": "/"
+    },
+    {
+      "title": "Производители",
+      "url": "/"
+    },
+    {
+      "title": "Для кого мы работаем",
+      "url": "/"
+    },
+    {
+      "title": "Сертификаты",
+      "url": "/"
+    },
+    {
+      "title": "О нас",
+      "url": "/"
+    },
+    {
+      "title": "FAQ",
+      "url": "/"
+    },
+    {
+      "title": "Контакты",
+      "url": "/"
+    }
+  ],
+  "phone_us": "313-58-45",
+  "cards_info": [
+    {
+      "id": "1",
+      "title": "Качественная продукция",
+      "paragraph": "Все наши товары сертифицированы и имеют сопроводительную документацию.",
+      "img": "card_info1"
+    },
+    {
+      "id": "2",
+      "title": "Индивидуальный подход",
+      "paragraph": "Возможность изготовления компонентов специально для вас на заводах-изготовителя.",
+      "img": "card_info2"
+    },
+    {
+      "id": "3",
+      "title": "Бесплатная доставка",
+      "paragraph": "При наличии товара на складе и заказе от 10 000 рублей, доставим бесплатно по Москве и СПБ в течение 2х часов.",
+      "img": "card_info3"
+    },
+    {
+      "id": "4",
+      "title": "Подбираем аналоги",
+      "paragraph": "Поможем подобрать аналоги популярных европейских брендов в условиях санкций.",
+      "img": "card_info4"
+    },
+    {
+      "id": "5",
+      "title": "Резервный запас компонентов",
+      "paragraph": "Хранение товара на наших складах для постоянных клиентов.",
+      "img": "card_info5"
+    },
+    {
+      "id": "6",
+      "title": "Гибкая система оплаты",
+      "paragraph": "Отсрочка платежей для постоянных клиентов.",
+      "img": "card_info6"
+    }
+  ],
+  "cards_producer": [
+    {
+      "id": "1",
+      "title": "Deaier",
+      "img": "card_producer1"
+    },
+    {
+      "id": "2",
+      "title": "Foryard",
+      "img": "card_producer2"
+    },
+    {
+      "id": "3",
+      "title": "Fujicon",
+      "img": "card_producer3"
+    },
+    {
+      "id": "4",
+      "title": "Js Artificial Grass",
+      "img": "card_producer4"
+    },
+    {
+      "id": "5",
+      "title": "Marquis",
+      "img": "card_producer5"
+    },
+    {
+      "id": "6",
+      "title": "Marquis",
+      "img": "card_producer5"
+    },
+    {
+      "id": "7",
+      "title": "Marquis",
+      "img": "card_producer5"
+    },
+    {
+      "id": "8",
+      "title": "Marquis",
+      "img": "card_producer5"
+    },
+    {
+      "id": "9",
+      "title": "Marquis",
+      "img": "card_producer5"
+    },
+    {
+      "id": "10",
+      "title": "Marquis",
+      "img": "card_producer5"
+    },
+    {
+      "id": "11",
+      "title": "Marquis",
+      "img": "card_producer5"
+    }
+  ],
+  "cards_job": [
+    {
+      "id": "1",
+      "title": "ВЫ ОСТАВЛЯЕТЕ ЗАЯВКУ",
+      "paragraph": "Отправить запрос вы можете любым удобным для вас способом: например, через форму на сайте. Также вы можете связаться с нами напрямую."
+    },
+    {
+      "id": "2",
+      "title": "МЫ ПРОВЕРЯЕМ НАЛИЧИЕ ПОЗИЦИЙ",
+      "paragraph": "Проверяем наличие на складе,  а также актуальность производства (возможна замена, если необходимо.) Если требуется замена - подбираем аналоги и привозим на заказ."
+    },
+    {
+      "id": "3",
+      "title": "ФОРМИРУЕМ КОММЕРЧЕСКОЕ ПРЕДЛОЖЕНИЕ",
+      "paragraph": "На данном этапе мы с вами согласуем ценовое предложение, обговариваем сроки поставки и условия оплаты."
+    },
+    {
+      "id": "4",
+      "title": "ВЫ ПОЛУЧАЕТЕ ТОВАР",
+      "paragraph": "Поставляем вам товар в надлежащей упаковке в сопровождении оригиналов всех необходимых документов либо вы забираете его самовывозом."
+    
+    },
+    {
+      "id": "5",
+      "title": "МЫ ВЫПОЛНЯЕМ ЗАКАЗ",
+      "paragraph": "Товар поступает на склад в Москву или Санкт-Петербург, где мы сверяем правильность поставки и начинаем сборку."
+    },
+    {
+      "id": "6",
+      "title": "ПРОВОДИМ ОПЛАТУ",
+      "paragraph": "Далее, после получения авансового платежа, мы размещаем заказ."
+    }
+  ],
+  "accordion" : [
+    {
+      "id":"1",
+      "title": "Lorem ipsum dolor sit amet consectetur. Ultrices aliquam.",
+      "text" : [" Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus sint eveniet fuga cumque, blanditiis architecto asperiores aliquid temporibus laudantium quaerat, facere labore id nihil doloremque quia doloribus rem eos expedita.",
+    " Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus sint eveniet fuga cumque, blanditiis architecto asperiores aliquid temporibus laudantium quaerat, facere labore id nihil doloremque quia doloribus rem eos expedita.",
+  " Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus sint eveniet fuga cumque, blanditiis architecto asperiores aliquid temporibus laudantium quaerat, facere labore id nihil doloremque quia doloribus rem eos expedita."]
+    },
+    {
+      "id":"2",
+      "title": "Lorem ipsum dolor sit amet consectetur. Ultrices aliquam.",
+      "text" : [" Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus sint eveniet fuga cumque, blanditiis architecto asperiores aliquid temporibus laudantium quaerat, facere labore id nihil doloremque quia doloribus rem eos expedita.",
+    " Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus sint eveniet fuga cumque, blanditiis architecto asperiores aliquid temporibus laudantium quaerat, facere labore id nihil doloremque quia doloribus rem eos expedita.",
+  " Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus sint eveniet fuga cumque, blanditiis architecto asperiores aliquid temporibus laudantium quaerat, facere labore id nihil doloremque quia doloribus rem eos expedita."]
+    },
+    {
+      "id":"3",
+      "title": "Lorem ipsum dolor sit amet consectetur. Ultrices aliquam.",
+      "text" : [" Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus sint eveniet fuga cumque, blanditiis architecto asperiores aliquid temporibus laudantium quaerat, facere labore id nihil doloremque quia doloribus rem eos expedita.",
+    " Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus sint eveniet fuga cumque, blanditiis architecto asperiores aliquid temporibus laudantium quaerat, facere labore id nihil doloremque quia doloribus rem eos expedita.",
+  " Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus sint eveniet fuga cumque, blanditiis architecto asperiores aliquid temporibus laudantium quaerat, facere labore id nihil doloremque quia doloribus rem eos expedita."]
+    },
+    {
+      "id":"4",
+      "title": "Lorem ipsum dolor sit amet consectetur. Ultrices aliquam.",
+      "text" : [" Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus sint eveniet fuga cumque, blanditiis architecto asperiores aliquid temporibus laudantium quaerat, facere labore id nihil doloremque quia doloribus rem eos expedita.",
+    " Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus sint eveniet fuga cumque, blanditiis architecto asperiores aliquid temporibus laudantium quaerat, facere labore id nihil doloremque quia doloribus rem eos expedita.",
+  " Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus sint eveniet fuga cumque, blanditiis architecto asperiores aliquid temporibus laudantium quaerat, facere labore id nihil doloremque quia doloribus rem eos expedita."]
+    },
+    {
+      "id":"5",
+      "title": "Lorem ipsum",
+      "text" : [" Lorem ipsum dolor sit amet consectetur, adipisicing elit."]
+    },
+    {
+      "id":"6",
+      "title": "Lorem ipsum dolor.",
+      "text" : [" Lorem ipsum dolornditiis architecto asperiores aliquid temporibus laudantium quaerat, facere labore id nihil doloremque quia doloribus rem eos expedita.",
+    " Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus sint eveniet fuga cumque, blanditiis architecto asperiores aliquid temporibus laudantium quaerat, facere labore id nihil doloremque quia doloribus rem eos expedita."]
+    }
+  ],
+  "footerList": [
+    {
+      "title": "Каталог",
+      "url": "/"
+    },
+    {
+      "title": "Производители",
+      "url": "/"
+    },
+    {
+      "title": "Для кого мы работаем",
+      "url": "/"
+    },
+    {
+      "title": "Сертификаты",
+      "url": "/"
+    },
+    {
+      "title": "О нас",
+      "url": "/"
+    }
+    
+  ]
+}

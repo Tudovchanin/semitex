@@ -1,0 +1,12 @@
+@use './variables';
+
+.card-producer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+  height: 174px;
+  border-radius: 10px;
+  background-color: variables.$primary-color;
+}

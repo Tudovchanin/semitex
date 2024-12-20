@@ -1,0 +1,34 @@
+@use './helpers';
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+
+  &__logo {
+  width: 189px;
+  height: 34px;
+  }
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 36px;
+  }
+
+  &__item-link {
+    opacity: .5;
+    @include helpers.hover-and-pointer {
+      transition: opacity .5s;
+      &:hover {
+        opacity: 1;
+      }
+    }
+  }
+
+  &__btn {
+    max-width: 261px;
+    height: 56px;
+  }
+}
