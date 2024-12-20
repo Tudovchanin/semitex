@@ -28,7 +28,6 @@
 
   &__form {
     width: 100%;
-    
   }
 
   &__wrapper-width {
@@ -76,9 +75,6 @@
     }
   }
 
-  &__btn {
-  
-  }
 
   &__privacy {
     font-size: 12px;
@@ -93,7 +89,7 @@
       content: '';
       position: absolute;
       left: 0;
-      background: url('/assets/img/lock.svg') no-repeat;
+      background: url('../img/lock.svg') no-repeat;
       width: 16px;
       height: 16px;
     }

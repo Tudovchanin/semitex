@@ -63,7 +63,7 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .hero-bg {
-    background-image: url("/assets/img/hero_blue.svg");
+    background-image: url("../img/hero_blue.svg");
     background-repeat: no-repeat;
     background-size: 100% 100%;
     position: relative;
@@ -81,19 +81,19 @@ h1, h2, h3, h4, h5, h6, p {
     position: absolute;
     width: 100%;
     height: 100%;
-    background: url("/assets/img/decor_hero.png") no-repeat center;
+    background: url("../img/decor_hero.png") no-repeat center;
     z-index: -1;
 }
 
 @media (min-width: 1949px) {
     .hero-bg::before {
-        background: url("/assets/img/decor_hero.png") no-repeat center -60px;
+        background: url("../img/decor_hero.png") no-repeat center -60px;
     }
 }
 
 @media (max-width: 1909px) {
     .hero-bg::before {
-        background: url("/assets/img/decor_hero.png") no-repeat center -40px;
+        background: url("../img/decor_hero.png") no-repeat center -40px;
     }
 }
 
@@ -412,7 +412,7 @@ h1, h2, h3, h4, h5, h6, p {
     content: "";
     position: absolute;
     left: 0;
-    background: url("/assets/img/check.svg") no-repeat;
+    background: url("../img/check.svg") no-repeat;
     width: 14px;
     height: 14px;
 }
@@ -509,7 +509,7 @@ h1, h2, h3, h4, h5, h6, p {
     content: "";
     position: absolute;
     left: 0;
-    background: url("/assets/img/lock.svg") no-repeat;
+    background: url("../img/lock.svg") no-repeat;
     width: 16px;
     height: 16px;
 }
@@ -764,7 +764,7 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 [data-number="01"]::after {
-    background-image: url("/assets/img/card_job1.png");
+    background-image: url("../img/card_job1.png");
 }
 
 @media (max-width: 1400px) {
@@ -784,7 +784,7 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 [data-number="02"]::after {
-    background-image: url("/assets/img/card_job2.png");
+    background-image: url("../img/card_job2.png");
 }
 
 @media (max-width: 1400px) {
@@ -800,7 +800,7 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 [data-number="03"]::after {
-    background-image: url("/assets/img/card_job3.png");
+    background-image: url("../img/card_job3.png");
 }
 
 @media (max-width: 1400px) {
@@ -816,7 +816,7 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 [data-number="04"]::after {
-    background-image: url("/assets/img/card_job4.png");
+    background-image: url("../img/card_job4.png");
     left: -28px;
 }
 
@@ -837,7 +837,7 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 [data-number="05"]::after {
-    background-image: url("/assets/img/card_job5.png");
+    background-image: url("../img/card_job5.png");
     left: -28px;
 }
 
@@ -854,7 +854,7 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 [data-number="06"]::after {
-    background-image: url("/assets/img/card_job6.png");
+    background-image: url("../img/card_job6.png");
 }
 
 @media (max-width: 1400px) {
@@ -1156,7 +1156,7 @@ body {
 }
 
 .section-slider {
-    background-image: url("/assets/img/bg_slider.png");
+    background-image: url("../img/bg_slider.png");
     background-repeat: no-repeat;
     background-size: 100% 100%;
     min-height: 728px;
@@ -1187,7 +1187,7 @@ body {
     position: absolute;
     right: 0;
     top: 65%;
-    background: url("/assets/img/accordion_btn.svg") no-repeat center/16px;
+    background: url("../img/accordion_btn.svg") no-repeat center/16px;
     background-color: rgba(128, 128, 128, 0.839);
     transform: rotate(-90deg) translateY(75px);
     font-size: 0;
@@ -1238,7 +1238,7 @@ body {
     bottom: 0;
     left: 0;
     right: 0;
-    background: url("/assets/img/bg_cards_job.png") no-repeat center/100% 100%;
+    background: url("../img/bg_cards_job.png") no-repeat center/100% 100%;
 }
 
 .section-cards-job__title {
@@ -1274,7 +1274,7 @@ body {
     left: 0;
     right: 0;
     z-index: -1;
-    background: url("/assets/img/bg_img_accordion.svg") no-repeat center top/100% 100%;
+    background: url("../img/bg_img_accordion.svg") no-repeat center top/100% 100%;
 }
 
 @media (max-width: 480px) {
@@ -1291,7 +1291,7 @@ body {
     z-index: -1;
     width: 100%;
     height: calc(100% + 100px);
-    background-image: url("/assets/img/bg_decor_accordion.png");
+    background-image: url("../img/bg_decor_accordion.png");
     background-size: 100% 100%;
 }
 

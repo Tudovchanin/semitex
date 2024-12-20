@@ -51,6 +51,15 @@ const path = {
     cleanDocs: "./" + docsPath   // Путь для очистки папки docs перед копированием
 }
 
+// Функция для запуска локального сервера с помощью BrowserSync для docs
+function serveDocs() {
+    browserSync.init({
+        server: {
+            baseDir: "./" + docsPath // Указываем базовую директорию на docs
+        }
+    });
+}
+
 // Функция для запуска локального сервера с помощью BrowserSync
 function serve() {
     browserSync.init({
@@ -203,8 +212,11 @@ exports.images = images
 exports.webpImages = webpImages
 exports.fonts = fonts
 exports.clean = clean
+
 exports.cleanDocs = cleanDocs;  // Экспортируем задачу очистки docs
-exports.copyToDocs = copyToDocs;
+exports.copyToDocs = copyToDocs; // Копируем в папку docs содержимое dist
+exports.serveDocs = serveDocs; // запускаем паку docs
+
 exports.build = build
 exports.watch = watch
 exports.default = watch /* Задача по умолчанию - запускать режим наблюдения */
