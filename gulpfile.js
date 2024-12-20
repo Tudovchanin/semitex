@@ -22,6 +22,7 @@ const browserSync = require("browser-sync").create(); // Создает лока
 /* Paths */
 const srcPath = "src/";// Путь к исходным файлам
 const distPath = "dist/";// Путь к выходным файлам
+const docsPath = "docs/"; // Путь к папке docs для гих хаб pages
 
 // Определение путей для различных типов файлов
 const path = {
@@ -46,7 +47,8 @@ const path = {
         images: srcPath + "assets/img/**/*.{jpg,png,svg,gif,ico,webp,webmanifest,xml,json}", // Наблюдение за изменениями в изображениях
         fonts:  srcPath + "assets/fonts/**/*.{eot,woff,woff2,ttf,svg}"
     }, // Наблюдение за изменениями в шрифтах
-    clean: "./" + distPath  // Путь для очистки выходной папки перед сборкой
+    clean: "./" + distPath,  // Путь для очистки выходной папки перед сборкой
+    cleanDocs: "./" + docsPath   // Путь для очистки папки docs перед копированием
 }
 
 // Функция для запуска локального сервера с помощью BrowserSync
@@ -165,6 +167,17 @@ function clean() {
     return del(path.clean)
 }
 
+// Функция для очистки папки docs перед копированием файлов
+function cleanDocs() {
+    return del(path.cleanDocs);
+}
+
+// Функция для копирования файлов из dist в docs
+function copyToDocs() {
+    return src(distPath + '**/*')  // Читает все файлы из папки dist
+        .pipe(dest(docsPath));  // Копирует их в папку docs
+}
+
 // Функция для наблюдения за изменениями файлов и автоматического запуска соответствующих задач Gulp 
 function watchFiles() {
     gulp.watch([path.watch.html], html); // Наблюдает за изменениями HTML файлов и запускает задачу html()
@@ -190,6 +203,8 @@ exports.images = images
 exports.webpImages = webpImages
 exports.fonts = fonts
 exports.clean = clean
+exports.cleanDocs = cleanDocs;  // Экспортируем задачу очистки docs
+exports.copyToDocs = copyToDocs;
 exports.build = build
 exports.watch = watch
 exports.default = watch /* Задача по умолчанию - запускать режим наблюдения */
